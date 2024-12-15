@@ -385,6 +385,7 @@ input[type="radio"]:checked + .tag_label {
     padding: 10px;
     width: 600px;
 }
+
 input[type="radio"]:checked + .icon_label img {
     background-color: #20535A; 
     color: white; 
@@ -539,24 +540,8 @@ input[type="radio"]:checked + .icon_label img {
     margin-top: 15px; /* Add some spacing at the top */
 }
 
-.icon_label {
-    display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
-    text-align: center; /* Center-align text */
-    font-family: 'Montserrat', sans-serif; /* Consistent font style */
-    font-weight: 600; /* Bold text */
-    color: #20535A; /* Optional: Text color */
-    margin: 10px; /* Optional: Add spacing around each label */
-}
-.water_icon{
-    display: flex;
-}
-.icon_label img {
-    width: 40px; /* Adjust size of the image */
-    height: 40px; /* Adjust size of the image */
-    margin-top: 5px; /* Add space between text and image */
-}
+
+
 .plant_watering input {
     width: 100%;
     padding: 10px;
