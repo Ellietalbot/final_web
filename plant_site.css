@@ -1,0 +1,568 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Home */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    background-color: #ffffff;
+    z-index: 3;
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Add spacing between child elements */
+    padding: 0 20px; /* Add horizontal padding */
+}
+
+#socials {
+    padding-bottom: 0;
+}
+
+#socials img {
+    max-width: 3%;
+    margin: 20px 40px 20px 20px;
+    float: right;
+}
+
+#site_info {
+    display: flex;
+    align-items: center;
+}
+
+#site_info img {
+    max-width: 40%;
+    padding: 2px;
+}
+
+footer h1 {
+    margin: 0; /* Remove default margin */
+    font-family: 'EB Garamond';
+    font-style: italic;
+    font-size: 24px; /* Adjust size if needed */
+    width:100%;
+}
+
+.sidebar {
+    background-color: #B3D0BB;
+    width: 200px;
+    position: fixed;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    overflow: visible;
+}
+
+#nav_logo {
+    width: 300px;
+    height: auto;
+    margin-top: 20px;
+}
+
+.sidebar_img {
+    border-radius: 5px;
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.sidebar_button {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.sidebar_button a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    background-color: #B3D0BB;
+    width: 100%;
+    box-sizing: border-box;
+    transition: background-color 0.2s ease, transform 0.3s ease;
+}
+
+.sidebar_button:hover a {
+    background-color: #9fc3a8;
+    transform: translateX(10px);
+}
+
+.nav_text {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    color: #20535A;
+    padding: 29px;
+    border-radius: 0 5px 5px 0;
+    font-size: 18px;
+    background-color: #9fc3a8;
+    z-index: 11;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.sidebar_button:hover .nav_text {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+#main {
+    margin-left: 200px;
+    z-index: 0;
+    padding-top: 1px; /* Prevent margin collapse */
+    z-index: 0;
+}
+
+/* Slideshow container adjustments */
+.slideshow-container {
+    max-width: 100%;  /* Ensure full width */
+    margin: 0 auto;
+    position: relative;
+    height: 100vh; /* Full height of the viewport */
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center the images horizontally */
+    align-items: center; /* Center the images vertically */
+    overflow: hidden; /* Hide overflow content */
+}
+
+.mySlides {
+    display: block;
+    width: 100%; /* Ensure full width */
+    height: 100%; /* Full height of the container */
+    object-fit: cover; /* Ensure the image fits properly and doesn't distort */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 1; /* Ensure images are visible */
+}
+
+.overlay_text {
+    display: flex;
+    flex-direction: column;
+    padding: 70px;
+    position: absolute;
+    bottom: 100px;
+    left: 100px;
+    width: 50%;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.7); /* Slight opacity for overlay */
+    border-radius: 10px;
+    z-index: 2; /* Ensure overlay is above the image */
+}
+
+
+.overlay_text h1 {
+    color: black;
+    font-family: 'EB Garamond';
+    font-weight: 600;
+    font-size: 80px;
+}
+
+.overlay_text p {
+    font-family: 'Montserrat';
+    font-size: 20px;
+}
+
+
+
+
+/* My Plants */
+.my_plants{
+    width: 70%;
+    padding-bottom: 10%;
+}
+
+.card_container{
+    margin-left: 300px;
+    padding-top: 100px; /* Use padding instead of margin */
+    background-color: white;
+    border-radius: 20px;
+    width: 30%;
+    object-fit: contain;
+
+
+}
+.plant_card{
+    width:650px;
+    height:350px;
+    background-color:whitesmoke;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden; /* Cut off any excess content */
+    position: relative;
+}
+.plant_info{
+    width:100%;
+    color: #20535A;
+    font-family: 'EB Garamond';
+    padding:40px;
+    font-size: 130%;
+}
+.plant_info h2{
+    color: darkgray;
+    font-family: 'Montserrat';
+    font-weight:400;
+    font-size: 90%;
+
+}
+.plant_info p{
+    text-align: center;
+    margin:20px;
+    margin-left: 0px;
+    background-color: #20535A;
+    border-radius: 20px;
+    padding:10px;
+    color:#B3D0BB;
+    font-family: 'Montserrat';
+    font-weight:600;
+    font-size: 90%;
+}
+.plant_info p:hover{
+    transform: scale(1.1);
+
+}
+.plant_img{
+    padding:40px;
+    padding-bottom: 0px;
+    height:120%;
+    object-fit: cover; /* Ensure image fills container while cropping */
+    position: relative; 
+}
+.plant_content{
+    display: flex;
+}
+.add_plant {
+    position: sticky;
+    top:100px;
+    margin: 100px auto;
+    margin-right: 100px;
+    width: 30%;
+    height:40%;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   overflow:hidden;
+}
+
+.add_plant form {
+    display: flex;
+    flex-direction: column;
+}
+
+.add_plant label {
+    margin-bottom: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #20535A;
+    font-size: 130%;
+}
+
+.add_plant input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.add_plant input:focus {
+    outline: none;
+    border-color: #20535A;
+    box-shadow: 0 0 5px rgba(32, 83, 90, 0.5);
+}
+
+.add_plant button {
+    background-color: #20535A;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.add_plant button:hover {
+    background-color: #1a474e;
+}
+
+input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+.tags{
+    margin:10px;
+}
+.add_plant p {
+    margin:10px;
+    margin-bottom: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #20535A;
+    font-size: 130%;
+}
+
+fieldset{
+    border: none;
+}
+
+.tags label {
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: #f1f1f1; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+
+.tags label:hover {
+    background-color: #ddd; 
+    transform: scale(1.05); 
+}
+
+
+input[type="radio"]:checked + .tag_label {
+    background-color: #20535A; 
+    color: white; 
+    transform: scale(1.1);
+}
+.icon_scroller{
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+.icon_label img{
+    display: inline-block;
+    width: 100px;
+    background-color: #f1f1f1; 
+    border-radius: 100%;
+    margin:5px;
+
+}
+.icon_label img:hover{
+    transform: scale(1.2);
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+    background-color: white;
+
+}
+.icons{
+
+    display: flex; 
+    white-space: nowrap; 
+    gap: 10px;
+    padding: 10px;
+    width: 600px;
+}
+input[type="radio"]:checked + .icon_label img {
+    background-color: #20535A; 
+    color: white; 
+    transform: scale(1.1);
+}
+#no_plant{
+    display: block;
+}
+.no_plant_img{
+    width:40%;
+    margin-top: 100px;
+    margin-left: 400px;
+
+}
+#no_plant_h1{
+    margin-left: 330px;
+    font-size: 40px;
+    color:lightgray;
+    font-family: 'EB Garamond';
+}
+
+
+#day_names {
+    margin-left: 250px;
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-around; 
+    align-items: center; 
+    padding: 10px;
+    background-color: black;
+    border-radius: 30px 30px 0px 0px;
+}
+
+
+#day_names p {
+    margin: 0; 
+    padding: 20px; 
+    font-size: 16px; 
+    text-align: center; 
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+
+}
+#dates {
+    display: grid;
+    margin-left: 250px;
+    grid-template-columns: repeat(7, 1fr);
+    justify-content: space-around; 
+    align-items: center; 
+    gap: 10px; 
+    padding: 10px;
+    padding-left: 50px;;
+    background-color: #f7f7f7;
+
+
+}
+.date {
+    width: 70px; 
+    height: 70px; 
+    margin: 10px;
+    text-align: center; 
+    background-color: #f1f1f1; 
+    border-radius: 50%; 
+    display: flex; /* Enable flexbox for centering */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    font-size: 16px; /* Adjust font size if needed */
+    font-family: 'Montserrat', sans-serif; /* Ensure consistent font styling */
+    font-weight: 700;
+    color: #20535A; /* Optional: Adjust text color */
+    z-index: 1;
+}
+.date:hover {
+    transform: scale(1.2);
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+    background-color: white;
+}
+#pick_month_container{
+
+    padding: 20px;
+    padding-top:50px;
+    margin-left: 250px;
+    display: flex;
+}
+#month{
+    padding:10px;
+    color: #20535A;
+    font-family: 'EB Garamond';
+    font-size: 200%;
+    font-weight: 800;
+
+}
+.month_button {
+    align-self: center;
+    height: 40px; /* Adjust the height to ensure the circle is large enough */
+    width: 40px; /* Same for width */
+    border: none;
+    padding: 0; /* Remove padding */
+    font-size: 16px; /* Adjust font size if needed */
+    font-family: 'Montserrat', sans-serif; /* Ensure consistent font styling */
+    font-weight: 700;
+    color: #20535A; /* Optional: Adjust text color */
+    border-radius: 50%; /* Make the button circular */
+    display: flex; /* Enable flexbox for centering content */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+
+}
+.plant_watering_form{
+    margin-right: 0px;
+    margin-left: 1000px;
+}
+
+#calendar_top {
+    display: flex; /* Flexbox layout */
+    width: 100%; /* Ensure it spans the entire width */
+    justify-content: space-between; /* Adds spacing between child elements */
+    align-items: flex-start; /* Align items to the top */
+    padding: 20px; /* Optional: Add padding for spacing */
+    box-sizing: border-box; /* Include padding in width calculations */
+}
+
+#calendar-container {
+    flex:7; /* 70% of the space */
+    max-width: 70%; /* Ensures it doesn't exceed 70% */
+}
+
+.plant_watering_form {
+    margin-top:50px;
+    flex: 3; /* 30% of the space */
+    max-width: 30%; /* Ensures it doesn't exceed 30% */
+    margin-left: 20px; /* Add some space between the calendar and the form */
+    padding: 20px; /* Optional: Add padding inside the form */
+    box-sizing: border-box; /* Include padding in width calculations */
+    background-color: #f7f7f7; /* Optional: Add a background to the form for contrast */
+    border-radius: 10px; /* Optional: Add rounded corners */
+}
+.plant_watering_form label{
+    margin-bottom: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #20535A;
+    font-size: 130%;
+
+}
+.water_radio_container {
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: space-around; /* Distribute space evenly */
+    align-items: flex-start; /* Align items at the top */
+    gap: 10px; /* Add spacing between radio groups */
+    margin-top: 15px; /* Add some spacing at the top */
+}
+
+.icon_label {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center-align text */
+    font-family: 'Montserrat', sans-serif; /* Consistent font style */
+    font-weight: 600; /* Bold text */
+    color: #20535A; /* Optional: Text color */
+    margin: 10px; /* Optional: Add spacing around each label */
+}
+.water_icon{
+    display: flex;
+}
+.icon_label img {
+    width: 40px; /* Adjust size of the image */
+    height: 40px; /* Adjust size of the image */
+    margin-top: 5px; /* Add space between text and image */
+}
+.plant_watering input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}

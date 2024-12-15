@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="plant_site.css">
+    <script src="calendar.js" defer></script>
+</head>
+<body>
+    <div class ="sidebar">
+        <img id="nav_logo" src="images/green_logo.png" alt="logo">
+        <ul class="sidebar_nav">
+            <li class="sidebar_button">
+                <a class="nav_link" href="plants.html">
+                    <p class="nav_text">My Plants</p>  
+                    <img class="sidebar_img" src="images/plantnav.png" alt="My plants">
+                </a>
+            </li>
+            <li class="sidebar_button">
+                <a class="nav_link" href="watering_calendar.html">
+                    <p class="nav_text">Watering Schedule</p>  
+                    <img class="sidebar_img"  src="images/calendarnav.png" alt="Watering schedule">
+                </a>
+            </li>
+            <li class="sidebar_button">
+                <a  class="nav_link"href="index.html">
+                    <p class="nav_text">Home</p>      
+                    <img  class="sidebar_img" src="images/homenav.png" alt="Home">
+                </a>
+            </li>
+        </ul>
+
+    </div> 
+    <div id="calendar_top">
+        <div id="calendar-container">
+            <div id="pick_month_container">
+                <button class="month_button" id="prev">&lt;</button>
+                <h2 id="month"></h2>
+                <button class="month_button" id="next">&gt;</button>
+            </div>
+            <div id="day_names">
+                <p>Sunday</p>
+                <p>Monday</p>
+                <p>Tuesday</p>
+                <p>Wednesday</p>
+                <p>Thursday</p>
+                <p>Friday</p>
+                <p>Saturday</p>
+            </div>
+            <div id="dates"></div>
+        </div>
+        <div class="plant_watering_form">
+            <form class="plant_watering">
+                <label for="plant_name">Plant Name</label>
+                <input type="text" id="plant_name" name="plant_name" placeholder="Enter your plant name" required>
+            </form>
+            <fieldset class="water_icon">
+                <div class="water_radio_container">
+                    <input type="radio" name="water_icon" value="low_water" id="low_water">
+                    <label class="water_label" for="low_water">Low Water<img src="images/low_water.png" alt="Low water"></label>
+                </div>
+                <div class="water_radio_container">
+                    <input type="radio" name="water_icon" value="normal_water" id="normal_water">
+                    <label class="water_label" for="normal_water">Normal Water<img src="images/normal_water.png" alt="Normal water"></label>
+                </div>
+                <div class="water_radio_container">
+                    <input type="radio" name="water_icon" value="high_water" id="high_water">
+                    <label class="water_label" for="high_water">Heavy Water<img src="images/high_water.png" alt="Heavy Water"></label>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+    <footer>
+        <h1>Leaf & Thrive</h1>
+        <div id="socials">
+            <img src ="images/facebook.png" alt ="facebook logo">
+            <img src="images/instagram.png" alt="instagram logo">
+            <img src="images/tik-tok.png" alt="tik-tok logo">
+            <img src="images/twitter.png" alt="x logo">
+        </div>
+    </footer>
+
+</body>
+</html>
